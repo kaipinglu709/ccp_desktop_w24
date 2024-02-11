@@ -150,10 +150,11 @@ img, video {
 
 @media (prefers-reduced-motion: reduce) {
     .reduced-motion-gif {
-      content: url('path/to/static-image.jpg'); 
+        visibility: hidden;
     }
   }
 
+  
 .likes-list {
     list-style: none; 
     padding: 0; 
