@@ -149,20 +149,10 @@ img, video {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    *, 
-    *::before, 
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
-    
-    img[src*=".gif"] {
-      animation: none !important;
-      transition: none !important;
+    .reduced-motion-gif {
+      content: url('path/to/static-image.jpg'); 
     }
   }
-  
 
 .likes-list {
     list-style: none; 
