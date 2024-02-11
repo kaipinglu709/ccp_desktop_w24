@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets</title>
+    <link rel ="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel ="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
     
-    <a href="#main-content">Skip to Main Content</a>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "pets.html">Pets</a></li>
                 <li><a href = "recipes.html">Recipes</a></li>
-                <li><a href = "travel.html">Travel</a></li>
+                <li><a href = "travel.html"class="active">Travel</a></li>
             </ul>
         </nav>
     </header>
@@ -33,21 +36,28 @@
 
             <P>It is one of the only places that does not allow cars.
             <h3>Photo Gallery:</h3>
-            <h4>Aerial View</h4>
-            <img src="images/mackinac_1.jpg" width ="200" alt = "Aerial view">
-            <p>I would love to go there! Looks beautiful</p>
-         <h5>January in Mackinac</h5>
-            <img src="images/mackinac_winter.jpg"  width ="200" alt="Yummy chicken">
-            <p>Really cool in the winter</p>
-            <h5>Lake Michigan</h5>
-            <video width="200"  controls>
-                <source src="images/mackinac.mp4">
-                Your browser does not support the video tag. </video>
-        <p>The beautiful waves of Lake Michigan you can see</p>
-        <h5>Cliff on the Island</h5>
-            <img src="images/mackinac_cliff.jpeg"  width ="200" alt="Delicous Chicken">
-        <p>A great photo spot for the family.        </p>
-        </div>
+            <div class="grid-discussion">
+                <div class="grid-item">
+                    <img src="images/mackinac_1.jpg" alt="Aerial view">
+                    <h4>Aerial View</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="images/mackinac_winter.jpg" alt="Winter in Mackinac">
+                    <h4>January in Mackinac</h4>
+                </div>
+                <div class="grid-item">
+                    <video controls>
+                        <source src="images/mackinac.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h4>Lake Michigan</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="images/mackinac_cliff.jpeg" alt="Cliff on Mackinac Island">
+                    <h4>Cliff on the Island</h4>
+                </div>
+            </div>
+            </div>
         <div>
             <h2>Niagra Falls</h2>
             <img src="images/Niagara_Falls_gif.gif" width = "400" alt="gif">
@@ -59,17 +69,21 @@
 
             <P>It is very unique
             <h3>Photo Gallery:</h3>
-            <h4>Aerial View</h4>
-            <img src="images/Niagara_Falls_Rainbow.jpg" width ="200" alt = "Aerial view">
-            <p>I would love to go there! Looks beautiful</p>
-         <h5>Cool view of sunset!</h5>
-            <img src="images/Niagara_Falls_Sunset.jpg"  width ="200" alt="Sunset">
-            <p>Really cool sunset</p>
-            <h5>Big view</h5>
-            <img src="images/Niagara_Falls_Zoom-Out.jpg"  width ="200" alt="Zoomed out">
-
-                Your browser does not support the video tag. 
-        </div>
+            <div class="grid-discussion">
+                <div class="grid-item">
+                    <img src="images/Niagara_Falls_Rainbow.jpg" alt="Rainbow over Niagara Falls">
+                    <h4>Aerial View</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="images/Niagara_Falls_Sunset.jpg" alt="Sunset at Niagara Falls">
+                    <h4>Cool view of sunset!</h4>
+                </div>
+                <div class="grid-item">
+                    <img src="images/Niagara_Falls_Zoom-Out.jpg" alt="Wide view of Niagara Falls">
+                    <h4>Big view</h4>
+                </div>
+            </div>            
+            </div>
     <div>
         <h2>Boulder Colorado</h2>
         <img src="images/Boulder_Colorado.gif" width = "400" alt="gif">
@@ -81,20 +95,25 @@
 
         <P>It is very unique and dope
         <h3>Photo Gallery:</h3>
-        <h4>Pearl Street </h4>
-        <img src="images/Boulder_Colorado_Pearl_Street.jpg" width ="200" alt = "Pearl Street">
-        <p>I would love to go there! Looks beautiful</p>
-     <h5>Cool view of snow!</h5>
-        <img src="images/Boulder_Colorado_Snow_on_Flatirons.jpg"  width ="200" alt="Snow">
-        <p>Really cool sunset</p>
-        <h5>Big view</h5>
-        <img src="images/Boulder_Colorado_Flatirons.jpg"  width ="200" alt="Flatirons">
-        <p>Really cool flatirons</p>
-        <h5>Big pond</h5>
-        <img src="images/Boulder_Colorado_Varsity_Pond.jpg"  width ="200" alt="Pond">
-
-    </div>
-
+        <div class="grid-discussion">
+            <div class="grid-item">
+                <img src="images/Boulder_Colorado_Pearl_Street.jpg" alt="Pearl Street in Boulder, Colorado">
+                <h4>Pearl Street</h4>
+            </div>
+            <div class="grid-item">
+                <img src="images/Boulder_Colorado_Snow_on_Flatirons.jpg" alt="Snow on the Flatirons">
+                <h4>Cool view of snow!</h4>
+            </div>
+            <div class="grid-item">
+                <img src="images/Boulder_Colorado_Flatirons.jpg" alt="The Flatirons, Boulder">
+                <h4>Big view</h4>
+            </div>
+            <div class="grid-item">
+                <img src="images/Boulder_Colorado_Varsity_Pond.jpg" alt="Varsity Pond at Boulder">
+                <h4>Big pond</h4>
+            </div>
+        </div>        
+        </div>
         <div>Kaiping Lu</div>
     </main>
     

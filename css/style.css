@@ -1,4 +1,209 @@
+body, h1, h2, h3, p, ul, li, a {
+    font-family: 'Arial', sans-serif;
+}
+
+
+h1 {
+    font-size: 50px; 
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Simplifica', serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px; 
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    text-align: center;
+    font-family: 'Schoolbell', arial, serif; 
+    font-style: italic; 
+
+}
+
+h3 {
+    font-size: 18px; 
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-weight: bold;
+
+
+}
+
+h4 {
+    font-size: 16px; 
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    font-family: cursive;
+}
+
+
+h5 {
+    font-size: 13px; 
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+}
+
+h6 {
+    font-size: 10px;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+}
+
+.skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    z-index: 1000;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    list-style: none;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    font-weight: bold; 
+    text-decoration: underline; 
+    background-color: #666; 
+    color: #fff; 
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif; 
+    
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    background-color:#f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    background-color: #f9f9ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 .grid-discussion {
     display: grid;
-    grid-template-columns: 300px 300px;
-}    
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px; 
+    grid-auto-rows: auto;
+    padding: 20px;
+}
+
+
+.grid-discussion img, .grid-discussion video {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+.grid-discussion :nth-child(3):nth-last-child(1) {
+    grid-column: 1 / -1; 
+    grid-row: span 2; 
+}
+
+@media (max-width: 620px) {
+    .grid-discussion img, .grid-discussion video {
+        height: 150px; 
+    }
+}
+
+.likes-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0 auto; 
+    display: table; 
+}
+.likes-heading {
+    text-align: center;
+}
+
+.likes-list {
+    list-style: none; 
+    padding-left: 0; 
+    text-align: left;
+    list-style-type: none;
+}
+
+.likes-list li {
+    padding-left: 1em; 
+    text-indent: -1em; 
+}
+
+.likes-list li::before {
+    content: "🐾 "; 
+    padding-right: 10px;
+}
+
+.grid-discussion .grid-item h4,
+.grid-discussion .grid-item h5 {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+
+main ol li {
+    counter-increment: step-counter; 
+    position: relative; 
+    padding-left: 40px; 
+    margin-bottom: 10px; 
+}
+
+main ol li::before {
+    content: counter(step-counter) ".";
+    position: absolute;
+    left: 0; 
+    font-weight: bold; 
+    color: #333;
+}
+
+main ul li {
+    position: relative;
+    padding-left: 30px; 
+}
+main ul li::before {
+    content: "🧑‍🍳"; 
+    position: absolute;
+    left: 0;
+}

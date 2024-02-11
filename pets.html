@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets</title>
+    <title>Pets</title>    
+    <link rel ="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel ="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
     
-    <a href="#main-content">Skip to Main Content</a>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "pets.html">Pets</a></li>
-                <li><a href = "recipes.html">Recipes</a></li>
-                <li><a href = "travel.html">Travel</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html" class="active">Pets</a></li> 
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="travel.html">Travel</a></li>
             </ul>
         </nav>
     </header>
@@ -27,20 +30,23 @@
 
             <p>Rocket the dog is someones cool pet. He is funny, and fast like a rocket. He likes walks.</p> 
             <P>He is extremly energetic, and funny. </P>
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
+            <div class="grid-discussion">
             <img src="images/rocket_dinner.jpg" width ="200" alt = "dinner time">
             <img src="images/rocket_childhood.jpg"  width ="200" alt="Childhood">
             <video width="200"  controls>
                 <source src="images/rocket_kitchen_clip.mp4">
                 Your browser does not support the video tag.  Funny video </video>
             <img src="images/rocket_wants_to_go_out.jpg"  width ="200" alt="Rocket wants to leave">
-
-            <h3>Likes</h3>
-            <ul>
+        </div>
+        <h3 class="likes-heading">Likes</h3>
+                <ul class="likes-list">
                 <li>Belly rubs</li>
                 <li>Playing tug-of-war</li>
                 <li>Sneaking onto the couch</li>
-            </ul>
+                </ul>
         
         </div>
 
@@ -49,7 +55,12 @@
             <img src="images/goldfish.jpg" width = "400" alt="Brown labradoodle wearing colorful lei">
             <p> This is my chill goldfish. He is cool! He is incredibly lazy, however. All he does is sleep, float, and eat. He hates to swim, actually. This goldish loves to sleep on the rocks</p> 
             <P>His favorite meal of the day is sushi, which is ironic. He also likes to blow bubbles, and does not like when people look at him</P>
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
+
+
+            <div class ="grid-discussion">
             <img src="images/goldfish_staring.jpg" width ="200" alt = "Goldfish starign hard">
             <img src="images/goldfish_friends.jpg"  width ="200" alt="Goldfish with his best friend!">
             <video width="200"  controls>
@@ -57,13 +68,15 @@
                 Your browser does not support the video tag.  This was a video of a goldfish swimming
             </video>
             <img src="images/goldfish_shark.jpg"  width ="200" alt="Funny photo of goldfish with a shark hat">
+        </div>
 
-            <h3>Likes</h3>
-            <ul>
+
+        <h3 class="likes-heading">Likes</h3>
+                <ul class="likes-list">
                 <li>Fishing</li>
                 <li>Eating</li>
                 <li>Playing sharks and minowws</li>
-            </ul>
+                </ul>
         </div>
 
         <div>
@@ -71,17 +84,22 @@
             <img src="images/Brul1.jpg" width = "400" alt="Brown labradoodle wearing colorful lei">
             <p> This is a chill cat. She is cool! She is kinda lazy though</p> 
             <P>She likes to chase dogs all day</P>
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
+            <div class="grid-discussion">
+
             <img src="images/Brul2.jpg" width ="200" alt = "Cool cat">
             <img src="images/Brul3.jpg"  width ="200" alt="Cooler cat">
             <img src="images/Brul4.png"  width ="200" alt="Funny cat photo">
+            </div>
 
-            <h3>Likes</h3>
-            <ul>
+            <h3 class="likes-heading">Likes</h3>
+                <ul class="likes-list">
                 <li>Sleeping</li>
                 <li>Chasing dogs</li>
                 <li>Watching movies</li>
-            </ul>
+                </ul>
         </div>
 
         <div>
@@ -89,17 +107,21 @@
             <img src="images/boston-terrier-stand.jpg" width = "400" alt="Brown labradoodle wearing colorful lei">
             <p> This is someones cool dog. He is cool! He likes to run all the time</p> 
             <P>He likes to chase cats all day</P>
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
+            <div class="grid-discussion">
+
             <img src="images/Boston_chew.jpg" width ="200" alt = "Chewy">
             <img src="images/Boston_cute.jpg"  width ="200" alt="Cute dog">
             <img src="images/Boston_Jeff.jpg"  width ="200" alt="Funny dog">
-
-            <h3>Likes</h3>
-            <ul>
+            </div>
+            <h3 class="likes-heading">Likes</h3>
+                <ul class="likes-list">
                 <li>Flexing</li>
                 <li>Staring</li>
                 <li>Being cool</li>
-            </ul>
+                </ul>
         </div>
 
         <div>
@@ -107,17 +129,21 @@
             <img src="images/husky_baby.jpg" width = "400" alt="Baby Husky">
             <p> This is someones cool husky. He is cool! He likes to play in the snow</p> 
             <P>He is also famous</P>
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
-            <img src="images/husky_fat.jpg" width ="200" alt = "Fat husky">
+            <div class="grid-discussion">
+                <img src="images/husky_fat.jpg" width ="200" alt = "Fat husky">
             <img src="images/husky_pool.jpg"  width ="200" alt="pool dog">
             <img src="images/husky_snow.jpg"  width ="200" alt="snow dog">
+            </div>
 
-            <h3>Likes</h3>
-            <ul>
+            <h3 class="likes-heading">Likes</h3>
+                <ul class="likes-list">
                 <li>Playing in snow</li>
                 <li>Swimming</li>
                 <li>Being cooler</li>
-            </ul>
+                </ul>
         </div>
 
         <div>Kaiping Lu</div>
