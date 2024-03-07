@@ -254,6 +254,9 @@ main ul li::before {
     .grid-discussion img, .grid-discussion video {
         height: 200px; 
     }
+    h1 {
+        margin-left: 25px;
+    }
 }
 
 
