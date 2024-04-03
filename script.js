@@ -6,11 +6,11 @@ function MessageTime() {
     if (hours >= 5 && hours < 12) { //Morning
         message = "Good morning!";
     } else if (hours >= 12 && hours < 18) { //Afternoon
-        message = "Good afternoon! 🌤";
+        message = "Good afternoon!";
     } else if (hours >= 18 && hours < 21) { //Evening
-        message = "Good evening! 🌆";
+        message = "Good evening!";
     } else { // Night
-        message = "Good night! 🌙";
+        message = "Good night!";
     }
 
     document.getElementById('time-of-day-message').textContent = message;
